@@ -1,0 +1,36 @@
+<Project>
+    <PropertyGroup>
+        <Version>0.0.0.1</Version>
+        
+        <AssemblyVersion>$(Version)</AssemblyVersion>
+        <FileVersion>$(Version)</FileVersion>
+        
+        <Product>Deloitte.Mobile.Dart</Product>
+        <Company>Deloitte</Company>
+        <Trademark>Deloitte</Trademark>
+        <Copyright>Copyright by Qwertylolman© 2022</Copyright>
+
+        <NeutralLanguage>en</NeutralLanguage>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+
+        <IsPackable>false</IsPackable>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        
+        <NoWarn>1701;1702;1591</NoWarn>
+        <IsBindingProject>$(MSBuildProjectName.Contains('Binding'))</IsBindingProject>
+
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup Label="SharedNugetPackages">
+        <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.3" PrivateAssets="all" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="all" />
+    </ItemGroup>
+
+    <PropertyGroup Label="CodeStyle" Condition="'$(IsBindingProject)' != 'true'">
+        <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Debug'">$(MSBuildThisFileDirectory)\SolutionItems\Mobile.Debug.ruleset</CodeAnalysisRuleSet>
+        <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Release'">$(MSBuildThisFileDirectory)\SolutionItems\   Mobile.Release.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+</Project>

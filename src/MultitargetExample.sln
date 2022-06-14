@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetExample.Ios", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetExample.Droid", "MultitargetExample.Droid\MultitargetExample.Droid.csproj", "{69048F2F-48A4-4AD2-A7AE-432A0811A700}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6F5BE867-8D63-4DA3-9743-F19C73927F16}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		global.json = global.json
+		SolutionItems\Mobile.Debug.ruleset = SolutionItems\Mobile.Debug.ruleset
+		SolutionItems\Mobile.Release.ruleset = SolutionItems\Mobile.Release.ruleset
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

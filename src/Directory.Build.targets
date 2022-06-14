@@ -1,0 +1,68 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Update="Adobe.ACPAnalytics.Android"  Version="1.0.1" />
+        <PackageReference Update="Adobe.ACPAnalytics.iOS"  Version="1.0.2" />
+        <PackageReference Update="Adobe.ACPCore.Android" Version="1.1.0" />
+        <PackageReference Update="Adobe.ACPCore.iOS" Version="1.0.1" />
+        <PackageReference Update="Adobe.ACPIdentity.Android"  Version="1.1.0" />
+        <PackageReference Update="Adobe.ACPLifecycle.Android" Version="1.1.0" />
+
+        <PackageReference Update="Appium.WebDriver" Version="4.1.1" />
+        <PackageReference Update="Com.Airbnb.Android.Lottie" Version="4.2.2"/>
+        <PackageReference Update="Com.Airbnb.iOS.Lottie" Version="2.5.13"/>
+        <PackageReference Update="Deloitte.DUnit.API" Version="2.5.6" />
+        <PackageReference Update="Deloitte.DUnit.UI.Mobile" Version="2.5.7" />
+        <PackageReference Update="DotNetSeleniumExtras.PageObjects.Core" Version="3.12.1-beta" />
+        <PackageReference Update="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+        <PackageReference Update="FluentAssertions" Version="5.7.0" />
+        <PackageReference Update="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+        <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4-beta1.final" />
+        <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0" PrivateAssets="all" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.4" />
+        <PackageReference Update="Microsoft.Identity.Client" Version="4.28.1" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+        <PackageReference Update="Microsoft.Extensions.Http.Polly" Version="2.2.0" />
+        <PackageReference Update="Microsoft.Extensions.Logging" Version="2.2.0" />
+        <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+        <PackageReference Update="MvvmCross" Version="7.1.2" />
+        <PackageReference Update="MvvmCross.DroidX.RecyclerView" Version="7.1.2" />
+        <PackageReference Update="MvvmCross.DroidX.SwipeRefreshLayout" Version="7.1.2" />
+        <PackageReference Update="MvvmCross.Plugin.Messenger" Version="7.1.2" />
+        <PackageReference Update="MvvmCross.Plugin.RecyclerView" Version="7.1.2" />
+        <PackageReference Update="MvvmCross.Plugin.SwipeRefreshLayout" Version="7.1.2" />
+        <PackageReference Update="nunit" Version="3.12.0" />
+        <PackageReference Update="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Update="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Update="Realm" Version="5.1.2" PrivateAssets="all" />
+        <PackageReference Update="Selenium.WebDriver" Version="3.141.0" />
+        <PackageReference Update="System.Collections.Immutable" Version="1.7.1" />
+        <PackageReference Update="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
+        <PackageReference Update="Unity" Version="5.9.7" />
+        <PackageReference Update="WebP.Touch" Version="1.0.8" />
+
+        <PackageReference Update="AntiEmulator" Version="1.0.3"/>
+        <PackageReference Update="Xamarin.AndroidX.AppCompat" Version="1.2.0.6" />
+        <PackageReference Update="Xamarin.AndroidX.CardView" Version="1.0.0.6" />
+        <PackageReference Update="Xamarin.AndroidX.ConstraintLayout" Version="2.0.4.1"  />
+        <PackageReference Update="Xamarin.AndroidX.Core" Version="1.3.2.1" />
+        <PackageReference Update="Xamarin.AndroidX.ExifInterface" Version="1.1.0.5" />
+        <PackageReference Update="Xamarin.AndroidX.Legacy.Preference.V14" Version="1.0.0.6" />
+        <PackageReference Update="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.6" />
+        <PackageReference Update="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.2.0.4" />
+        <PackageReference Update="Xamarin.AndroidX.Media" Version="1.2.1.1" />
+        <PackageReference Update="Xamarin.AndroidX.Migration" Version="1.0.8" />
+        <PackageReference Update="Xamarin.AndroidX.Preference" Version="1.1.1.6" />
+        <PackageReference Update="Xamarin.AndroidX.RecyclerView" Version="1.1.0.6" />
+        <PackageReference Update="Xamarin.FFImageLoading" Version="2.4.11.982" />
+        <PackageReference Update="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
+        <PackageReference Update="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+        <PackageReference Update="Xamarin.Firebase.Analytics" Version="117.4.1-preview02" />
+        <PackageReference Update="Xamarin.Firebase.Common" Version="119.5.0" />
+        <PackageReference Update="Xamarin.Firebase.Core" Version="117.4.1-preview02" />
+        <PackageReference Update="Xamarin.Firebase.Iid" Version="121.0.1" />
+        <PackageReference Update="Xamarin.Firebase.Messaging" Version="121.0.1" />
+        <PackageReference Update="Xamarin.Google.Android.DataTransport.TransportRuntime" Version="2.2.5" />
+        <PackageReference Update="Xamarin.Google.Android.Material" Version="1.2.1.1" />
+        <PackageReference Update="Xamarin.Google.Dagger" Version="2.27.0" />
+    </ItemGroup>
+</Project>

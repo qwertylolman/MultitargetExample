@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Platforms\" />
+    <None Remove="Platforms\Ios\" />
+    <None Remove="Platforms\Droid\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Platforms\" />
+    <Folder Include="Platforms\Ios\" />
+    <Folder Include="Platforms\Droid\" />
+  </ItemGroup>
+</Project>

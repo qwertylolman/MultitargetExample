@@ -1,8 +1,7 @@
 ﻿namespace MultitargetExample.Plugin.Foo
 {
-	public interface IFoo
-	{
-		string GetFoo();
-	}
+    public interface IFoo
+    {
+        string GetFoo();
+    }
 }
-

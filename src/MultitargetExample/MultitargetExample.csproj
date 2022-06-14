@@ -5,7 +5,7 @@
         <IsPackable>false</IsPackable>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <RootNamespace>Deloitte.Mobile.Dart</RootNamespace>
+        <RootNamespace>MultitargetExample</RootNamespace>
         <Configurations>Debug;Release;Debug-NewsFeed;Release-NewsFeed;Debug-Dart;Release-Dart</Configurations>
         <Platforms>AnyCPU</Platforms>
     </PropertyGroup>

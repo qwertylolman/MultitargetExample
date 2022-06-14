@@ -2,9 +2,8 @@
 
 namespace MultitargetExample
 {
-	public static class FooInjection
-	{
-		public static IFoo FooInstance { get; set; }
-	}
+    public static class FooInjection
+    {
+        public static IFoo FooInstance { get; set; }
+    }
 }
-

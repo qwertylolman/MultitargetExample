@@ -1,10 +1,45 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
+  <PropertyGroup Label="General">
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <RootNamespace>Deloitte.Mobile.Dart</RootNamespace>
+        <Configurations>Debug;Release;Debug-NewsFeed;Release-NewsFeed;Debug-Dart;Release-Dart</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Plugins\MultitargetExample.Plugin.Foo\MultitargetExample.Plugin.Foo.csproj" />
-  </ItemGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DefineConstants>DEBUG;TRACE;DEBUG_NEWSFEED</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <Optimize>true</Optimize>
+        <DefineConstants>RELEASE;TRACE;RELEASE_NEWSFEED</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup Label="Application_Strings_Resource_Files">
+        <EmbeddedResource Update="Resources\AppStrings.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>AppStrings.Designer.cs</LastGenOutput>
+            <SubType>Designer</SubType>
+        </EmbeddedResource>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Resources\AppStrings.Designer.cs">
+            <DependentUpon>AppStrings.resx</DependentUpon>
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup Label="General_Nuget_Packages">
+        <PackageReference Include="MvvmCross" />
+        <PackageReference Include="Xamarin.Essentials" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Plugins\MultitargetExample.Plugin.Foo\MultitargetExample.Plugin.Foo.csproj" />
+    </ItemGroup>
+
 </Project>

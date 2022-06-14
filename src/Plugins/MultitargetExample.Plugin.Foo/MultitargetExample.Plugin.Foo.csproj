@@ -1,17 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="MSBuild.Sdk.Extras">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup Label="Multiplatform">
+        <TargetFrameworks>netstandard2.0;xamarin.ios10;monoandroid10.0</TargetFrameworks>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Platforms\" />
-    <None Remove="Platforms\Ios\" />
-    <None Remove="Platforms\Droid\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Platforms\" />
-    <Folder Include="Platforms\Ios\" />
-    <Folder Include="Platforms\Droid\" />
-  </ItemGroup>
+    <ItemGroup Label="Core">
+        <Compile Remove="Platforms\**\*.cs" />
+    </ItemGroup>
+
+    <ItemGroup Label="Ios" Condition=" $(TargetFramework.StartsWith('xamarin.ios')) ">
+        <Compile Include="Platforms\Ios\**\*.cs" />
+    </ItemGroup>
+
+    <ItemGroup Label="Droid" Condition=" $(TargetFramework.StartsWith('monoandroid')) ">
+        <Compile Include="Platforms\Droid\**\*.cs" />
+    </ItemGroup>
+
+    <PropertyGroup Label="Droid" Condition=" $(TargetFramework.StartsWith('monoandroid')) ">
+        <AndroidResgenFile>Platforms\Droid\Resources\Resource.designer.cs</AndroidResgenFile>
+        <AndroidResgenClass>Resource</AndroidResgenClass>
+        <MonoAndroidResourcePrefix>Platforms\Droid\Resources</MonoAndroidResourcePrefix>
+    </PropertyGroup>
+
+    <ItemGroup Label="Multiplatform">
+    </ItemGroup>
+
 </Project>

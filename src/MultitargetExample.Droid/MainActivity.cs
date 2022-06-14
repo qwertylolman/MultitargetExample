@@ -60,6 +60,5 @@ namespace MultitargetExample.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-	}
+    }
 }
-
